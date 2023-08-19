@@ -1,0 +1,281 @@
+
+/* Landing Page */
+main {
+  background: url(../img-2/magnific.jpg) no-repeat center center/cover;
+  height: 100vh;
+  border-bottom: var(--secondary-color) 2px solid;
+  position: relative;
+  overflow-y: visible;
+}
+
+main * {
+  z-index: 10;
+} 
+
+main::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #d7e60a 0.2px solid;
+  /* border-radius: 20px; */
+  animation: nav 3s forwards ease-in-out 1s;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes nav {
+  from {
+    width: 0%;
+    background: #edf39b;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar h1 {
+  font-size: 1.9rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 20px;
+  list-style: none;
+  padding: 10px;
+}
+
+
+/* Showcase */
+#showcase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.9rem;
+  text-align: center;
+  height: 100%;
+  line-height: 2rem;
+  /* margin-left: 3px; */
+}
+
+#showcase h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+#showcase .show p {
+  padding: 0.6rem 5rem;
+}
+
+
+/* Services */
+#service {
+  background: #f3f3f3;
+}
+.serve {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content:space-between;
+  grid-gap: 1rem;
+}
+
+.box {
+  text-align: center;
+  color: #111;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Console Sho[ */
+#console {
+  max-width: 1600px;
+}
+
+.container {
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.card {
+  display: block;
+  background: #111;
+  text-align: center;
+  line-height: 3em;
+  font-weight: 900;
+}
+
+.card h3 {
+  text-shadow: 1px 1px 1px #111;
+}
+
+.card img {
+  height: 290px;
+  width: 430px;
+}
+
+/* Info */
+
+#info {
+  /* margin: 0 1rem; */
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  color: #111;
+}
+
+/* Online */
+
+#online {
+  display: flex;
+  background: #0a50e6;
+  height: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.online-container {
+  padding: 1rem;
+  text-align: center;
+  margin-top: 250px;
+  font-size: 1.2rem;
+}
+
+#online img {
+  width: 50%;
+}
+
+/* Aside */
+
+#float {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #111;
+  margin-top: 10px;
+}
+
+#float > div img{
+  height: 400px;
+  width: 100%;
+  /* box-shadow: 5px 5px 8px 1px #d7e60a; */
+}
+
+.spline {
+  grid-column: 1 / span 2;
+}
+
+#float .split{
+  grid-column: 1 / span 3;
+}
+
+#float .split img {
+  height: 400px;
+}
+
+.aside {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 0px;
+  /* position: absolute; */
+}
+
+.play {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 4px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+}
+
+
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  height: 700px;
+  background: #000801;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contact img {
+  width: 50%;
+}
+
+#contact > div {
+  margin-top: 300px;
+
+}
+
+
+/*About*/
+.about-info {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: space-evenly;
+}
+#about {
+  text-align: center;
+  background: #cf4848;
+  color: #fff;
+  width: 500px;
+  margin: 0 500px 10px 500px;
+}
+
+.ent {
+  background: #0a50e6;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 20%;
+  border-radius: 15px;
+}
+/* footer */
+
+.main-footer {
+  background: #111;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 1rem;
+  line-height: 1.9em;
+}
+
+.main-footer img {
+  height: 100px;
+  width: 100px;
+  border-radius: 45%;
+}
+
+.sub{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub input {
+  width: 100%;
+  height: 30px;
+}
